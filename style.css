@@ -1,22 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
+
 body {
     background-color: #0d1117;
     margin-left: 30px;
     margin-top: 10px;
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 header {
     color:white;
     margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #clock {
-    color: orange;
+    color: yellowgreen;
 }
 
 #mark {
-    color: goldenrod;
+    color: blueviolet;
 }
 
 #blink {
