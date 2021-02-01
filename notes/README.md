@@ -85,6 +85,7 @@ When the link is clicked, the page will scroll down or up to the location with t
         <a href="html_demo.html#C4">Jump to Chapter 4</a>
     ```
 
+- The `<map>` tag is used to define an image map. An image map is an image with clickable areas.
 
 # CSS (Cascading Style Sheets)
 
@@ -117,30 +118,17 @@ When the link is clicked, the page will scroll down or up to the location with t
 
 -  One can change the link state colors, by using CSS, A link can also be styled as a button, by using CSS.
     ```
-    <style>
     a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
     }
 
     a:visited {
-    color: pink;
-    background-color: transparent;
-    text-decoration: none;
     }
 
     a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
     }
 
     a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
     }
-    </style>
     ````
 
+- Use the CSS `float` property to let the image float to the right or to the left of a text.

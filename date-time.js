@@ -1,7 +1,8 @@
 // adding html elements to show date and time
-let clockDiv = document.createElement('div');
-document.body.appendChild(clockDiv);
-clockDiv.setAttribute("id", "clock");
+let clockSpan = document.createElement('span');
+let header = document.getElementsByTagName('header');
+header[0].appendChild(clockSpan);
+clockSpan.setAttribute("id", "clock");
 let clockElement = document.getElementById('clock')
 
 // adding 'st', 'nd', 'rd', 'th' on dates
@@ -40,23 +41,23 @@ function updateTime() {
 
     if (hours > 12) {
         strToAppend = "PM";
-        hours < 22 ? hours1 = "0" + (hours - 12) : hours1 = String(hours);    
+        hours < 22 ? hours1 = "0" + (hours - 12) : hours1 = String(hours);
     }
     else if (hours < 12) {
         strToAppend = "AM";
-        hours < 10 ? hours1 = "0" + (hours) : hours1 = String(hours);   
+        hours < 10 ? hours1 = "0" + (hours) : hours1 = String(hours);
     }
     else {
         hours1 = hours;
         strToAppend = "PM";
     }
-    
+
     // adding a "0" when value of minute is less than 10
     if (mins < 10) mins = "0" + mins;
     if (secs < 10) secs = "0" + secs;
 
     clockElement.innerHTML = `Today is ${dayName[day]} - ${date}${dateSuffix} ${monthName[month]}, ${year}</br>
-    <b>Current time is: </b><mark> ${hours1}:${mins}:${secs} ${strToAppend}</mark>`
+    <b>Current time is: </b>${hours1}:${mins}:${secs} ${strToAppend}`
 }
 
 setInterval(updateTime, 1000);
