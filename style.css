@@ -62,3 +62,13 @@ a:hover {
 .title {
     color:cyan;
 }
+
+#data-table th {
+    background-color: #362f4b;
+    color: whitesmoke;
+}
+
+#data-table tr:nth-child(odd) {
+    background-color: #f6f6f672;
+    color: black;
+}
