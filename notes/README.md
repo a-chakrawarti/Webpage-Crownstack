@@ -19,6 +19,8 @@
 - The `<img>` tag is used to embed an image in an HTML page. The `src` attribute specifies the path to the image to be displayed. Two ways to specific URL in `src` attribute.
   1. Absolute URL - Links to an external image that is hosted on another website. Example: `src="https://www.w3schools.com/images/img_girl.jpg"`
   2. Relative URL - Links to an image that is hosted within the website. Example: `src="/images/img_girl.jpg"`
+  - The value of the `alt` attribute should describe the image. If a browser cannot find an image, it will display the value of the `alt` attribute.
+  - We can use `style` attribute to specify the width and height of an image or alternatively we can use `width` and `height` attributes.
 
   > It is almost always best to use relative URLs. They will not break if you change domain.
 
@@ -59,7 +61,7 @@ Browsers usually indent `<blockquote>` elements.
 
 - The HTML `<q>` tag defines a short quotation. Browsers normally insert quotation marks around the quotation.
 
-- The HTML `<abbr>` tag defines an abbreviation or an acronym. Use the global `title attribute` to show the description for the abbreviation/acronym when you mouse over the element.
+- The HTML `<abbr>` tag defines an abbreviation or an acronym. Use the global `title` attribute to show the description for the abbreviation/acronym when you mouse over the element.
 
 - The HTML `<address>` tag defines the contact information for the author/owner of a document or an article.
 
@@ -89,7 +91,7 @@ When the link is clicked, the page will scroll down or up to the location with t
 - CSS can be added to HTML documents in 3 ways:
 
     - Inline - by using the style attribute inside HTML elements. Example: `<h1 style="color:blue;">A Blue Heading</h1>`
-    - Internal - by using a <style> element in the <head> section
+    - Internal - by using a `<style>` element in the `<head>` section
     ```
     <!DOCTYPE html>
     <html>
