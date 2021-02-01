@@ -13,17 +13,16 @@
     <header>
         <h1><span id="blink">>_ </span>Fun with <span id="mark">HTML and CSS</span> &#128526;</h1>
     </header>
-    <a href="https://duckduckgo.com/"><img src="./assets/monkey-laptop-mistake.gif" title="Oh no! I messed up."
+    <a href="https://duckduckgo.com/"><img src="./assets/monkey-laptop-mistake.gif" id ="monkey" title="Oh no! I messed up."
             alt="Monkey on Laptop" width="250px" height="200px"></a>
 
 
     <div>
-        <h3>Tom and Jerry:</h3>
+        <h2>> Tom and Jerry</h2>
         <p>Tom and Jerry is an American animated franchise and series of comedy short films created
             in 1940 by William Hanna and Joseph Barbera.
             Best known for its 161 theatrical short films by Metro-Goldwyn-Mayer, the series centers on the rivalry
-            between
-            the titular characters of a cat named Tom and a mouse named Jerry.</p>
+            between the titular characters of a cat named Tom and a mouse named Jerry.</p>
         <figure>
             <img src="./assets/tom-jerry.png" width="400" height="200" alt="Tom and Jerry" usemap="#tomjerry">
             <figcaption><i><small>* Tom chasing Jerry, <b>click on either</b> to know more</small></i></figcaption>
@@ -35,6 +34,71 @@
         <area shape="rect" coords="150,0,400,200" href="https://tomandjerry.fandom.com/wiki/Tom_Cat" target="_blank"
             alt="Tom" onclick="notify('Tom the Cat')">
     </map>
+
+    <h2>> Televsion Shows</h2>
+    <table>
+        <tr>
+            <th>Serial Number</th>
+            <th>Title</th>
+            <th>Total # episodes</th>
+            <th>Broadcast run</th>
+            <th>Production Company</th>
+            <th>Original Channel</th>
+            <th>Total # seasons</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>The Tom and Jerry Show(1975)</td>
+            <td>16</td>
+            <td>1975</td>
+            <td>Hanna-Barbera</td>
+            <td>ABC</td>
+            <th rowspan="2">01</th>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>The Tom and Jerry Comedy Show</td>
+            <td>15</td>
+            <td>1980-82</td>
+            <td>Filmation</td>
+            <td>CBS</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Tom & Jerry Kids</td>
+            <td>65</td>
+            <td>1990-93</td>
+            <td>Hanna-Barbera</td>
+            <td>Fox</td>
+            <td>04</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>Tom and Jerry Tales</td>
+            <td>26</td>
+            <td>2006-08</td>
+            <td>Warner Bros. Animation</td>
+            <td>The CW</td>
+            <td>02</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>The Tom and Jerry Show(2014)</td>
+            <td>104</td>
+            <td>2014-present</td>
+            <td>Warner Bros. Animation Renegade Animation</td>
+            <td>Cartoon Network(2014-16)<br>Boomerang SVOD(2017-present</td>
+            <td>03</td>
+        </tr>
+        <tr>
+            <th colspan="2">Total</th>
+            <td>226</td>
+            <td>1975-present</td>
+            <th colspan="3">-</th>
+        </tr>
+    </table>
+    <small><a href="https://en.wikipedia.org/wiki/Tom_and_Jerry">Source: https://en.wikipedia.org/wiki/Tom_and_Jerry</a></small>
+
 
 </body>
 <script src="./date-time.js"></script>
