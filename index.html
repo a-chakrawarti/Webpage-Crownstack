@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun with HTML and CSS</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <script src="./scripts.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -31,8 +30,10 @@
         </figure>
     </div>
     <map name="tomjerry">
-        <area shape="rect" coords="0,0,150,200" href="https://tomandjerry.fandom.com/wiki/Jerry_Mouse" target="_blank" alt="Jerry">
-        <area shape="rect" coords="150,0,400,200" href="https://tomandjerry.fandom.com/wiki/Tom_Cat" target="_blank" alt="Tom">
+        <area shape="rect" coords="0,0,150,200" href="https://tomandjerry.fandom.com/wiki/Jerry_Mouse" target="_blank"
+            alt="Jerry" onclick="notify('Jerry the Mouse')">
+        <area shape="rect" coords="150,0,400,200" href="https://tomandjerry.fandom.com/wiki/Tom_Cat" target="_blank"
+            alt="Tom" onclick="notify('Tom the Cat')">
     </map>
 
 </body>
