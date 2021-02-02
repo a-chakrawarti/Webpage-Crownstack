@@ -123,6 +123,9 @@ When the link is clicked, the page will scroll down or up to the location with t
 
 - The `<map>` tag is used to define an image map. An image map is an image with clickable areas.
 
+- [HTML Global Atrributes](https://www.w3schools.com/tags/ref_standardattributes.asp)
+- [Global Event Attributes](https://www.w3schools.com/tags/ref_eventattributes.asp)
+
 # CSS (Cascading Style Sheets)
 
 - CSS can be added to HTML documents in 3 ways:

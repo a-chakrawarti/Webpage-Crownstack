@@ -11,12 +11,13 @@ function getDateSuffix(date) {
     if (date == 1) {
         dateSuffix = "st"
     } else if (date == 2) {
-        dateSuffix == "nd"
+        dateSuffix = "nd"
     } else if (date == 3) {
-        dateSuffix == "rd"
+        dateSuffix = "rd"
     } else {
         dateSuffix = "th"
     }
+    console.log(dateSuffix);
     return dateSuffix;
 }
 
