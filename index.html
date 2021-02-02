@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun with HTML and CSS</title>
     <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/track.png" type="image/gif" sizes="24x24">
 </head>
 
 <body>
     <header>
-        <h1><span id="blink">>_ </span>Fun with <span id="mark">HTML and CSS</span> &#128526;</h1>
+        <span class="blink">>_ </span><span class =blink>Fun with <span id="mark">HTML and CSS  &#128526;</span></span>
     </header>
 
     <nav>
@@ -24,6 +25,8 @@
     </br>
     <img src="./assets/monkey-laptop-mistake.gif" id="monkey" title="Oh no! I messed up." alt="Monkey on Laptop"
         width="250px" height="200px">
+
+    <!-- <iframe src="https://www.w3schools.com/html/html_iframe.asp" title="DuckDuckGo Search Engine" width="500px" height="400px" style="border: none;"></iframe> -->
     <div class="table-contents">
         <h2>Table of Contents:</h2>
         <ul>
@@ -38,23 +41,27 @@
 
 
 
-    <div>
-        <h2 class="title" id="tandj">> Tom and Jerry</h2>
-        <p>Tom and Jerry is an American animated franchise and series of comedy short films created
-            in 1940 by William Hanna and Joseph Barbera.
-            Best known for its 161 theatrical short films by Metro-Goldwyn-Mayer, the series centers on the rivalry
-            between the titular characters of a cat named Tom and a mouse named Jerry.</p>
-        <figure>
-            <img src="./assets/tom-jerry.png" width="400" height="200" alt="Tom and Jerry" usemap="#tomjerry">
-            <figcaption><i><small>* Tom chasing Jerry, <b>click on either</b> to know more</small></i></figcaption>
-        </figure>
+    <div class="w3-row-padding">
+        <div class="w3-half">
+            <h2 class="title" id="tandj">> Tom and Jerry</h2>
+            <p>Tom and Jerry is an American animated franchise and series of comedy short films created
+                in 1940 by William Hanna and Joseph Barbera.
+                Best known for its 161 theatrical short films by Metro-Goldwyn-Mayer, the series centers on the rivalry
+                between the titular characters of a cat named Tom and a mouse named Jerry.</p>
+        </div>
+        <div class="w3-half">
+            <figure>
+                <img src="./assets/tom-jerry.png" width="400" height="200" alt="Tom and Jerry" usemap="#tomjerry">
+                <figcaption><i><small>* Tom chasing Jerry, <b>click on either</b> to know more</small></i></figcaption>
+            </figure>
 
-        <map name="tomjerry">
-            <area shape="rect" coords="0,0,150,200" href="https://tomandjerry.fandom.com/wiki/Jerry_Mouse"
-                target="_blank" alt="Jerry" onclick="notify('Jerry the Mouse')">
-            <area shape="rect" coords="150,0,400,200" href="https://tomandjerry.fandom.com/wiki/Tom_Cat" target="_blank"
-                alt="Tom" onclick="notify('Tom the Cat')">
-        </map>
+            <map name="tomjerry">
+                <area shape="rect" coords="0,0,150,200" href="https://tomandjerry.fandom.com/wiki/Jerry_Mouse"
+                    target="_blank" alt="Jerry" onclick="notify('Jerry the Mouse')">
+                <area shape="rect" coords="150,0,400,200" href="https://tomandjerry.fandom.com/wiki/Tom_Cat"
+                    target="_blank" alt="Tom" onclick="notify('Tom the Cat')">
+            </map>
+        </div>
 
         <h3>> Television Shows</h3>
         <table id="data-table">
@@ -133,7 +140,8 @@
             <br>
             In September 2020, it was announced that the series will be rebooted as Oggy and the Cockroaches - Next Gen
             in where Oggy takes care of Piya, a 7-year-old female elephant from India.Furthermore, in January 2021, it
-            was announced that the original series will be renewed.</p>
+            was announced that the original series will be renewed.
+        </p>
 
         <img src="./assets/oggy.jpg" width="600px" height="300">
     </div>

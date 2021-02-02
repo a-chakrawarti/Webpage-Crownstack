@@ -4,6 +4,7 @@ let header = document.getElementsByTagName('header');
 header[0].appendChild(clockSpan);
 clockSpan.setAttribute("id", "clock");
 let clockElement = document.getElementById('clock')
+// clockElement.style.float = "right";
 
 // adding 'st', 'nd', 'rd', 'th' on dates
 function getDateSuffix(date) {

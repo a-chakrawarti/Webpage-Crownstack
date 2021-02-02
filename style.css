@@ -24,13 +24,17 @@ header {
 
 #clock {
     color: whitesmoke;
+    font-size: 20px;
+    text-align: right;
+    float: right;
+    margin-right: 15px;
 }
 
 #mark {
     color: blueviolet;
 }
 
-#blink {
+.blink {
     font-size: 45px;
     font-weight: 900;
     color:orange;
