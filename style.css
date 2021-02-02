@@ -12,10 +12,9 @@ body {
 }
 
 #alert {
-    width: 600px;
+    width: calc(100%-30px);
     height: 40px;
     padding: 10px;
-    margin: 30px;
     background-color: yellow;
     color: red;
     font-weight: bold;
@@ -28,6 +27,7 @@ body {
 #monkey {
     border-radius: 10px;
     border: 1px white solid;
+    margin-left: 45%;
 }
 
 header {
@@ -108,4 +108,10 @@ ul {
 nav {
     margin: 20px 20px 10px;
     padding: 10px 10px 10px;
+}
+
+footer {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    text-align: center;
 }

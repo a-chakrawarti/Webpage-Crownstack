@@ -199,6 +199,14 @@ There are four different techniques to create multicolumn layouts
     > Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
 - Media Queries: [Click here to read more!](https://www.w3schools.com/css/css_rwd_intro.asp)
 
+## >| HTML ComputerCode
+
+- The <kbd> element defines keyboard input: Monospace
+- The <samp> element defines sample output from a computer program : Monospace
+- The <code> element defines a piece of computer code : Monospace
+- The <var> element defines a variable in programming or in a mathematical expression : Italics
+- The <pre> element defines preformatted text : Maintains whitespace
+
 ## >| Miscellaneous
 - [HTML Global Atrributes](https://www.w3schools.com/tags/ref_standardattributes.asp)
 - [Global Event Attributes](https://www.w3schools.com/tags/ref_eventattributes.asp)
