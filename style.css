@@ -13,6 +13,7 @@ body {
 
 #alert {
     width: calc(100%-30px);
+    margin: 20px;
     height: 40px;
     padding: 10px;
     background-color: yellow;
@@ -21,13 +22,14 @@ body {
     opacity: 75%;
     text-align: center;
     border: 1px solid white;
+    border-radius: 5px;
 }
 
 
 #monkey {
     border-radius: 10px;
     border: 1px white solid;
-    margin-left: 45%;
+    margin-left: 42.5%;
 }
 
 header {
@@ -62,11 +64,12 @@ table, th, td {
 }
 
 .table-contents {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 5px;
     width: 300px;
-    height: 250px;
+    height: 200px;
     padding: 15px;
+    background-color: #362f4b;
 }
 
 a {
@@ -107,18 +110,33 @@ ul {
 
 nav {
     width: 300px;
-    height: 100px;
+    height: 95px;
     margin: 20px 0 10px;
     padding: 10px 0 10px;
+    background-color: #362f4b;
+    border-radius: 5px;
 }
 
 nav > a {
     margin: 10px;
     padding: 5px;
+    text-decoration: none;
 }
 
 footer {
     margin: 10px 0 10px 0;
     width: 100%;
     text-align: center;
+}
+
+footer:hover {
+    color: cyan;
+}
+
+a.formvalid {
+    background-color: #10244b72;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
 }

@@ -1,4 +1,9 @@
-# HTML (Hyper Text Markup Language) https://www.w3schools.com/html/default.asp
+# Quick Links:
+
+- [CSS Tricks](https://css-tricks.com/)
+- [HTML: w3Schools](https://www.w3schools.com/html/default.asp)
+
+# HTML (Hyper Text Markup Language) 
 
 - `<!DOCTYPE>` declaration represents the document type and `<!DOCTYPE html>` is declaration for HTML5.
 - The `<html>` element is the root element and it defines the whole HTML document.
@@ -210,6 +215,8 @@ There are four different techniques to create multicolumn layouts
 ## >| Miscellaneous
 - [HTML Global Atrributes](https://www.w3schools.com/tags/ref_standardattributes.asp)
 - [Global Event Attributes](https://www.w3schools.com/tags/ref_eventattributes.asp)
+- [HTML Element Reference](https://www.w3schools.com/tags/default.asp)
+- [HTML Entities](https://www.w3schools.com/html/html_entities.asp)
 
 # CSS (Cascading Style Sheets)
 
