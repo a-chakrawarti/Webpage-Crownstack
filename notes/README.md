@@ -201,11 +201,11 @@ There are four different techniques to create multicolumn layouts
 
 ## >| HTML ComputerCode
 
-- The <kbd> element defines keyboard input: Monospace
-- The <samp> element defines sample output from a computer program : Monospace
-- The <code> element defines a piece of computer code : Monospace
-- The <var> element defines a variable in programming or in a mathematical expression : Italics
-- The <pre> element defines preformatted text : Maintains whitespace
+- The `<kbd>` element defines keyboard input: Monospace
+- The `<samp>` element defines sample output from a computer program : Monospace
+- The `<code>` element defines a piece of computer code : Monospace
+- The `<var>` element defines a variable in programming or in a mathematical expression : Italics
+- The `<pre>` element defines preformatted text : Maintains whitespace
 
 ## >| Miscellaneous
 - [HTML Global Atrributes](https://www.w3schools.com/tags/ref_standardattributes.asp)
