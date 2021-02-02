@@ -73,7 +73,21 @@ a:hover {
     color: black;
 }
 
-#row01 {
+/* #row01 {
     background-color: #f6f6f672;
     color: black;
+} */
+
+#data-table tbody tr:first-child td:last-child {
+    background-color: #f6f6f672;
+    color: black;
+}
+
+ul {
+    list-style-type:square;
+}
+
+nav {
+    margin: 20px 20px 10px;
+    padding: 10px 10px 10px;
 }

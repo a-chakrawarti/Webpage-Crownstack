@@ -77,12 +77,48 @@ Browsers usually indent `<blockquote>` elements.
 To create a bookmark - first create the bookmark, then add a link to it.
 When the link is clicked, the page will scroll down or up to the location with the bookmark. 
 
-    ```
+    ```html
         <h2 id="C4">Chapter 4</h2>
         <a href="#C4">Jump to Chapter 4</a>
 
         // You can also add a link to a bookmark on another page
         <a href="html_demo.html#C4">Jump to Chapter 4</a>
+    ```
+
+- HTML also supports description lists. 
+    ```html
+    <dl> <!-- description list --> 
+    <dt>Coffee</dt> <!-- description term -->
+    <dd>- black hot drink</dd> <!-- description describe -->
+    <dt>Milk</dt> 
+    <dd>- white cold drink</dd>
+    </dl>
+    ```
+
+- The CSS `list-style-type` property is used to define the style of the list item marker. It can have one of the following values.
+  - disc: sets the item marker to a bullet(default)
+  - circle: sets the list item marker to a circle
+  - square: sets the list item marker to a square
+  - none: items will not be marked
+
+- An ordered list starts with the `<ol>` tag. Each list item starts with the `<li>` tag.
+- The `type` attribute of the `<ol>` tag, defines the type of the list item marker.
+- Example: type = {1, A, a, I, i}
+    ```html
+    <ol type="1">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    </ol>
+    ```
+- By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the `start` attribute.
+- Example:
+    ```html
+    <ol start="50">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    </ol>
     ```
 
 - The `<map>` tag is used to define an image map. An image map is an image with clickable areas.
@@ -93,7 +129,7 @@ When the link is clicked, the page will scroll down or up to the location with t
 
     - Inline - by using the style attribute inside HTML elements. Example: `<h1 style="color:blue;">A Blue Heading</h1>`
     - Internal - by using a `<style>` element in the `<head>` section
-    ```
+    ```html
     <!DOCTYPE html>
     <html>
     <head>
@@ -117,7 +153,7 @@ When the link is clicked, the page will scroll down or up to the location with t
 - The CSS `margin` property defines a margin (space) outside the border
 
 -  One can change the link state colors, by using CSS, A link can also be styled as a button, by using CSS.
-    ```
+    ```css
     a:link {
     }
 
