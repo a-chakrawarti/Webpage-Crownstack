@@ -74,7 +74,8 @@
     </div>
     <div class="w3-half">
         <figure>
-            <img src="./assets/obesity.png" id="center" width="600" height="300" alt="Tom and Jerry" usemap="#tomjerry">
+            <img src="./assets/obesity.png" class="center" width="600" height="300" alt="Tom and Jerry"
+                usemap="#tomjerry">
             <figcaption><i><small><a href="https://www.kokilabenhospital.com/blog/obesity-a-global-epidemic/">Source:
                             https://www.kokilabenhospital.com/</a></small></i>
             </figcaption>
@@ -153,15 +154,18 @@
                 </p>
             </div>
             <div class="w3-half">
-                <img id="center" src="./assets/foodpyramid.png" width="300" height="250" usemap=#foodpyramid>
-                <map name="foodpyramid">
-                    <area shape="rect" coords="0,0,300,100" href="https://medlineplus.gov/carbohydrates.html"
-                        target="_blank" alt="Carbs" onclick="notify('Carbohydrates')">
-                    <area shape="rect" coords="300,100,300,75" href="https://medlineplus.gov/dietaryproteins.html"
-                        target="_blank" alt="Proteins" onclick="notify('Proteins')">
-                    <area shape="rect" coords="300,175,300,250" href="https://medlineplus.gov/dietaryfats.html"
-                        target="_blank" alt="Fats" onclick="notify('Fats')">
-                </map>
+                <figure>
+                    <img class="center" src="./assets/foodpyramid.png" width="300" height="250" usemap=#foodpyramid>
+                    <figcaption>Food Pyramid, click on each to know more</figcaption>
+                    <map name="foodpyramid">
+                        <area shape="rect" coords="0,0,300,100" href="https://medlineplus.gov/carbohydrates.html"
+                            target="_blank" alt="Carbs" onclick="notify('Carbohydrates')" title="Carbs">
+                        <area shape="rect" coords="0,100,300,175" href="https://medlineplus.gov/dietaryproteins.html"
+                            target="_blank" alt="Proteins" onclick="notify('Proteins')" title="Protein">
+                        <area shape="rect" coords="0,175,300,250" href="https://medlineplus.gov/dietaryfats.html"
+                            target="_blank" alt="Fats" onclick="notify('Fats')" title="Fats">
+                    </map>
+                </figure>
             </div>
         </div>
     </div>
