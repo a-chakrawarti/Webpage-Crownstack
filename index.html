@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun with HTML and CSS</title>
-    <script src="./scripts.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/track.png" type="image/gif" sizes="24x24">
@@ -15,10 +14,10 @@
     <header>
         <span class="blink">>_ </span><span class=blink>Fun with <span id="mark">HTML and CSS &#128526;</span></span>
     </header>
-    <form onsubmit="return changeBackground()">
-        <input type="color" id="bgcolor">
-        <input type="submit" value="Change Background">
-    </form>
+
+    <div>
+        <input type="color" id="bgcolor"><span id="color-value"> #0d1117</span>
+    </div>
 
     <!-- Navigation Links -->
     <nav>
@@ -177,5 +176,6 @@
 
 </body>
 <script src="./date-time.js"></script>
+<script src="./scripts.js"></script>
 
 </html>

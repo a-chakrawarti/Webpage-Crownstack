@@ -160,8 +160,6 @@ img.center {
     overflow: hidden;
 }
 
-#bgcolor.input[type="color"] {
-    width: 40px;
-    height: 40px;
-    overflow: hidden;
+#color-value {
+    font-size: 20px;
 }

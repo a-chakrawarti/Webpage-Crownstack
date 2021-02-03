@@ -2,8 +2,11 @@ function notify(name) {
     alert(`You clicked on ${name}`);
 }
 
-function changeBackground() {
-    let colorId = document.getElementById('bgcolor');
-    let colorValue = colorId.value;
-    document.body.style.backgroundColor = colorValue;
-}
+
+let colorId = document.getElementById("bgcolor");
+let colorValueId = document.getElementById("color-value");
+colorId.addEventListener('input', function (val) {
+    // console.log(val.target.value);
+    document.body.style.backgroundColor = val.target.value;
+    colorValueId.innerHTML = ` ${val.target.value}`;
+});
