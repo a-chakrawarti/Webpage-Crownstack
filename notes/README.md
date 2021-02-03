@@ -212,6 +212,51 @@ There are four different techniques to create multicolumn layouts
 - The `<var>` element defines a variable in programming or in a mathematical expression : Italics
 - The `<pre>` element defines preformatted text : Maintains whitespace
 
+## >| HTML Forms
+
+- Notes on GET:
+
+    - Appends the form data to the URL, in name/value pairs
+    - NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+    - The length of a URL is limited (2048 characters)
+    - Useful for form submissions where a user wants to bookmark the result
+    - GET is good for non-secure data, like query strings in Google
+
+- Notes on POST:
+
+    - Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+    - POST has no size limitations, and can be used to send large amounts of data.
+    - Form submissions with POST cannot be bookmarked
+
+- The `autocomplete` attribute specifies whether a form should have autocomplete on or off.
+
+    - When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
+    - Example: `<form action="/action_page.php" autocomplete="on">`
+
+- The `<select>` element defines a drop-down list
+    - Example: 
+    ```html
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="3" multiple> <!-- size attribute to specify the number of visible values | multiple attribute to allow the user to select more than one value (hold ctrl while selecting)-->
+    <option value="volvo">Volvo</option>
+    <option value="saab" selected>Saab</option> <!-- saab is pre-selected -->
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    </select>
+    ```
+- `<textarea>` element defines a multi-line input field (a text area)
+    - Example: 
+    ```html
+    <textarea name="message" rows="10" cols="30">
+    The cat was playing in the garden.
+    </textarea>
+    ```
+- `<button>` element defines a clickable button.Example:
+   ```html
+   <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+   ```
+- [Different Input Types](https://www.w3schools.com/html/html_form_input_types.asp)
+
 ## >| Miscellaneous
 - [HTML Global Atrributes](https://www.w3schools.com/tags/ref_standardattributes.asp)
 - [Global Event Attributes](https://www.w3schools.com/tags/ref_eventattributes.asp)

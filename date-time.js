@@ -18,7 +18,6 @@ function getDateSuffix(date) {
     } else {
         dateSuffix = "th"
     }
-    console.log(dateSuffix);
     return dateSuffix;
 }
 
