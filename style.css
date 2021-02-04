@@ -163,3 +163,25 @@ img.center {
 #color-value {
     font-size: 20px;
 }
+
+.hero-image {
+    background-image: url("./assets/foodpic.jpg");
+    width: 70%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 2px solid rgb(76, 72, 123);
+    margin-bottom: 20px;
+    filter: blur(3px);
+}
+
+.hero-text {
+    font-size: 50px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    position: relative;
+    top:30%;
+    filter: blur(0);
+}
