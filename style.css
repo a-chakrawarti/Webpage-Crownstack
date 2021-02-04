@@ -12,7 +12,7 @@ body {
 }
 
 #alert {
-    width: calc(100%-30px);
+    width: 100%;
     margin: 20px;
     height: 40px;
     padding: 10px;
@@ -173,27 +173,38 @@ img.center { /* img element and center class */
 /* The >* part which is key: apply blur to the children individually
 rather than to the parent, that way children can individually un-blur. */
 
-.hero>* {
+/* .hero>* {
     filter: blur(2px);
-}
+} */
 
 .hero-image { 
-    background-image: url("./assets/foodpic.jpg");
-    width: 70%;
-    height: 500px;
+    background-image: url("./assets/eating.gif");
+    width: 40%;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    border: 2px solid rgb(76, 72, 123);
+    /* border: 2px solid rgb(76, 72, 123); */
     margin-bottom: 20px;
+    border-radius: 3%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .hero-text {
     font-size: 50px;
     font-weight: bolder;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
     top:30%;
+    filter: blur(1.5px);
+}
+
+.hero-text:hover {
     filter: blur(0);
+}
+
+.default {
+    color: white;
 }
