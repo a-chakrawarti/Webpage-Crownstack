@@ -1,7 +1,7 @@
 // adding html elements to show date and time
 let clockSpan = document.createElement('span');
 let header = document.getElementsByTagName('header');
-header[0].appendChild(clockSpan);
+header[0].prepend(clockSpan);
 clockSpan.setAttribute("id", "clock");
 let clockElement = document.getElementById('clock')
 // clockElement.style.float = "right";
