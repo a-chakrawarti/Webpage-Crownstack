@@ -273,6 +273,28 @@ There are four different techniques to create multicolumn layouts
 
 # CSS (Cascading Style Sheets)
 
+- Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+    ```css
+    selector {
+        /* declaration */
+        property1: property-value;
+    }
+    ```
+## >| CSS Selectors
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+- Simple selectors (select elements based on name, id, class) [class and id cannot start with a number]
+  - id(#), class(.), element.class(only specific HTML elements should be affected by a class)
+  - HTML elements can also refer to more than one class. Example: `<p class="center large">This paragraph refers to two classes.</p>`
+  - Elements having same style definitions can be grouped by separating each selector with a comma. Example:   `h1, h2, h3 {style definition}`
+
+- Combinator selectors (select elements based on a specific relationship between them)
+- Pseudo-class selectors (select elements based on a certain state)
+- Pseudo-elements selectors (select and style a part of an element)
+- Attribute selectors (select elements based on an attribute or attribute value)
+
+
+
 - CSS can be added to HTML documents in 3 ways:
 
     - Inline - by using the style attribute inside HTML elements. Example: `<h1 style="color:blue;">A Blue Heading</h1>`

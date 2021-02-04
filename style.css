@@ -2,11 +2,11 @@
 
 
 body {
-    background-color: #0d1117;
+    background-color: #0d1117; 
+    /* background-color: #239869;  */
     /* background-image: url('./assets/pexels-alexander-tiupa-192136.jpg'); */
     background-attachment: fixed;
-    margin-left: 30px;
-    margin-top: 10px;
+    margin: 10px 30px 10px 30px;
     color: white;
     font-family: 'Sawarabi Gothic', sans-serif;
 }
@@ -43,7 +43,15 @@ header {
     font-size: 15px;
     text-align: right;
     float: right;
-    margin-right: 15px;
+    width: 250px;
+    height: 60px;
+    padding: 10px;
+    background-color: #362f4b;
+    border-radius: 5px;
+}
+
+#clock:hover {
+    color: cyan;
 }
 
 #mark {
@@ -145,7 +153,7 @@ figcaption {
     text-align: center;
 }
 
-img.center {
+img.center { /* img element and center class */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -153,18 +161,23 @@ img.center {
 
 #bgcolor {
     padding: 0;
-    width: 30px;
-    height: 30px;
-    border-color: transparent;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 0;
+    height: 0;
+    visibility: hidden;
 }
 
 #color-value {
-    font-size: 20px;
+    font-size: 15px;
 }
 
-.hero-image {
+/* The >* part which is key: apply blur to the children individually
+rather than to the parent, that way children can individually un-blur. */
+
+.hero>* {
+    filter: blur(2px);
+}
+
+.hero-image { 
     background-image: url("./assets/foodpic.jpg");
     width: 70%;
     height: 500px;
@@ -173,7 +186,6 @@ img.center {
     display: block;
     border: 2px solid rgb(76, 72, 123);
     margin-bottom: 20px;
-    filter: blur(3px);
 }
 
 .hero-text {
