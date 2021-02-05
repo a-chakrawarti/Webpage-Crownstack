@@ -278,9 +278,13 @@ There are four different techniques to create multicolumn layouts
         property1: property-value;
     }
     ```
-- The CSS `margin` properties are used to create space around elements, outside of any defined borders.
+
+## >| Box Model
+
+![box-model](./notes/box-model.png)
+- The CSS `margin` properties are used to create space around elements, outside of any defined borders. Negative values are allowed.
 - If the `margin` property has two values, for Example, `margin: 20px 30px;` 20px will apply to top, bottom and 30px to right and left.
-- The CSS `padding` properties are used to generate space around an element's content, inside of any defined borders.
+- The CSS `padding` properties are used to generate space around an element's content, inside of any defined borders. Negative values are not allowed.
 
 ### Margin Collapse
 - Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. This does not happen on left and right margins! Only top and bottom margins!
