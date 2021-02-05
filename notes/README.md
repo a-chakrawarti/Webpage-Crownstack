@@ -285,6 +285,16 @@ There are four different techniques to create multicolumn layouts
 - The CSS `margin` properties are used to create space around elements, outside of any defined borders. Negative values are allowed.
 - If the `margin` property has two values, for Example, `margin: 20px 30px;` 20px will apply to top, bottom and 30px to right and left.
 - The CSS `padding` properties are used to generate space around an element's content, inside of any defined borders. Negative values are not allowed.
+- Adding padding to the width and height will increase the total width and height of an element. For example:
+  ```css
+  element {
+      width: 100px;
+      height: 200px;
+      padding: 20px;
+  }
+  ```
+  Here the total width will be 140px and height will be 240px. To tackle this we would use `box-sizing` property which will keep the size of the element fixed
+  but will decreasie the content space inside the element.
 
 ### Margin Collapse
 - Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. This does not happen on left and right margins! Only top and bottom margins!

@@ -20,9 +20,9 @@ body {
 }
 
 #alert {
-    width: 100%;
+    max-width: 100%;
     margin: 20px 0 20px 0;
-    height: 40px;
+    min-height: 40px;
     padding: 10px;
     background-color: yellow;
     color: red;
@@ -42,8 +42,8 @@ header {
     font-size: 15px;
     text-align: right;
     float: right;
-    width: 250px;
-    height: 60px;
+    max-width: 250px;
+    min-height: 60px;
     padding: 10px;
     background-color: #362f4b;
     border-radius: 5px;
@@ -131,6 +131,11 @@ nav > a {
     margin: 10px;
     padding: 5px;
     text-decoration: none;
+}
+
+nav a:hover {
+    color:cyan;
+    background-color: rgba(41, 39, 39, 0.579);
 }
 
 footer {
