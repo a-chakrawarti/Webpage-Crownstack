@@ -11,6 +11,14 @@ body {
     font-family: 'Sawarabi Gothic', sans-serif;
 }
 
+body>*:hover {
+    outline: 1px dashed red;
+}
+
+body>*>*:hover {
+    outline: 1px orange solid;
+}
+
 .top {
     background-image: url('./assets/border-top.png');
     background-repeat: repeat-x;
@@ -58,7 +66,7 @@ header {
 }
 
 .blink {
-    font-size: 35px;
+    font-size: 2vw;
     font-weight: 900;
     color:orange;
 }
@@ -80,6 +88,10 @@ table, th, td {
     height: auto;
     padding: 10px;
     background-color: #362f4b;
+}
+
+.table-contents h2 {
+    margin-top: 0;
 }
 
 a {
@@ -120,7 +132,7 @@ ul {
 
 nav {
     width: 300px;
-    height: 95px;
+    height: auto;
     margin: 20px 0 10px;
     padding: 10px 0 10px;
     background-color: #362f4b;
@@ -128,8 +140,7 @@ nav {
 }
 
 nav > a {
-    margin: 10px;
-    padding: 5px;
+    margin-left: 10px;
     text-decoration: none;
 }
 

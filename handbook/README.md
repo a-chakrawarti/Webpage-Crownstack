@@ -300,6 +300,13 @@ There are four different techniques to create multicolumn layouts
 - Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. This does not happen on left and right margins! Only top and bottom margins!
 
 
+## >| Max-width, Max-height & Min-width, Min-height
+- max-width: if content larger than max-width, it will automatically change the height. Overrides width property.
+- max-height: if cotent larger than max-height, it will overflow. Use the `overflow` property to handle the change.
+- min-width: content smaller than min-width, min-width will be applied.
+- min-height: content smaller, min-height applied. Prevents height property to become less than min-height.
+
+
 ## >| CSS Selectors
 CSS selectors are used to "find" (or select) the HTML elements you want to style.
 
