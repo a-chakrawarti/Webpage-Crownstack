@@ -278,6 +278,14 @@ There are four different techniques to create multicolumn layouts
         property1: property-value;
     }
     ```
+- The CSS `margin` properties are used to create space around elements, outside of any defined borders.
+- If the `margin` property has two values, for Example, `margin: 20px 30px;` 20px will apply to top, bottom and 30px to right and left.
+- The CSS `padding` properties are used to generate space around an element's content, inside of any defined borders.
+
+### Margin Collapse
+- Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. This does not happen on left and right margins! Only top and bottom margins!
+
+
 ## >| CSS Selectors
 CSS selectors are used to "find" (or select) the HTML elements you want to style.
 
@@ -308,7 +316,9 @@ In RGBA and HSLA (A specifies the opacity for a color) The alpha parameter is a 
 
 - The `background-position` property is used to specify the position of the background image. Example: `background-position: right top;`
 - The `background-attachment` property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page)
-
+- The `background-clip` property defines how far the background (color or image) should extend within an element. Usage:`background-clip: border-box|padding-box|content-box|initial|inherit;`
+- The `background-origin` property specifies the origin position (the background positioning area) of a background image.
+- The `background-position` property sets the starting position of a background image.
 - CSS can be added to HTML documents in 3 ways:
 
     - Inline - by using the style attribute inside HTML elements. Example: `<h1 style="color:blue;">A Blue Heading</h1>`

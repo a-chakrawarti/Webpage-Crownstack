@@ -72,10 +72,13 @@ table, th, td {
 
 .table-contents {
     /* border: 1px solid white; */
-    border-radius: 5px;
-    width: 300px;
-    height: 200px;
-    padding: 15px;
+    border-radius: 5px 60px 60px 5px;
+    border-left-style: solid;
+    border-width: 12px;
+    border-color: #50407d;
+    width: auto;
+    height: auto;
+    padding: 10px;
     background-color: #362f4b;
 }
 
@@ -153,9 +156,20 @@ img.center { /* img element and center class */
 #bgcolor {
     padding: 0;
     width: 0;
-    height: 0;
+    height: 24px;
     visibility: hidden;
 }
+
+/* #color-wheel-img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    background-image: url('./assets/color-circle.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+} */
 
 #color-value {
     font-size: 15px;
