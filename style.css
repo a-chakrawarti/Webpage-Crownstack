@@ -6,9 +6,17 @@ body {
     /* background-color: #239869;  */
     /* background-image: url('./assets/pexels-alexander-tiupa-192136.jpg'); */
     background-attachment: fixed;
-    margin: 10px 30px 10px 30px;
+    margin: 0 30px 10px 30px;
     color: white;
     font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.top {
+    background-image: url('./assets/border-top.png');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    width: 100%;
+    height: 32px;
 }
 
 #alert {

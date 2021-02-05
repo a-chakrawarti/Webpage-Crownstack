@@ -94,8 +94,6 @@ Browsers usually indent `<blockquote>` elements.
 
 - The HTML `<bdo>` tag is used to override the current text direction. BDO stands for Bi-Directional Override. Example: `<bdo dir="rtl">This text will be written from right to left</bdo>`
 
-> HTML supports 140 standard color names.
-
 - In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form.
 
 - Bookmarks can be useful if a web page is very long.
@@ -293,7 +291,23 @@ CSS selectors are used to "find" (or select) the HTML elements you want to style
 - Pseudo-elements selectors (select and style a part of an element)
 - Attribute selectors (select elements based on an attribute or attribute value)
 
+## >| CSS Colors
 
+HTML supports 140 standard color names.
+
+Colors are specified using 140 color names or RGB (red, green, blue), HEX(#rrggbb), HSL (hue, saturation, lightness) values.
+In RGBA and HSLA (A specifies the opacity for a color) The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).
+
+- Shades of gray are often defined using equal values for all the 3 light sources.
+- Hexadecimal (HEX) values between 00 and ff (same as decimal 0-255).
+- HSL: Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+
+    - Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+    - Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white
+
+
+- The `background-position` property is used to specify the position of the background image. Example: `background-position: right top;`
+- The `background-attachment` property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page)
 
 - CSS can be added to HTML documents in 3 ways:
 
