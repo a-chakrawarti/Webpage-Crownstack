@@ -308,7 +308,7 @@ There are four different techniques to create multicolumn layouts
 - Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. This does not happen on left and right margins! Only top and bottom margins!
 
 ## >| CSS Text
-- `vertical-align` property sets the vertical alignment of an element. Values are top, middle and bottom.
+- `vertical-align` property sets the vertical alignment of an element. Values are top, middle and bottom. Only inline and table elements.
 - `text-decoration` property has values none, overline, underline, line-through.
 - `text-transform` property has uppercase, lowercase and capitalize values.
 - `text-indent` property is used to specify the indentation of the first line of a text.

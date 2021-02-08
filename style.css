@@ -14,14 +14,14 @@ body {
 /* The >* part which is key: apply blur to the children individually
 rather than to the parent, that way children can individually un-blur. */
 
-body>*:hover {
+/* body>*:hover {
     outline: 2px dotted red;
     outline-offset: 3px;
 }
 
 body>*>*:hover {
     outline: 1px orange solid;
-}
+} */
 
 .top {
     background-image: url('./assets/border-top.png');
@@ -47,6 +47,9 @@ header {
     color:white;
     margin-bottom: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: sticky;
+    background-color: inherit;
+    top: 0px;
 }
 
 #clock {
@@ -54,14 +57,14 @@ header {
     bottom: 0;
     right: 0;
     color: whitesmoke;
-    font-size: 15px;
+    font-size: 14px;
     text-align: right;
-    float: right;
+    vertical-align: bottom;
     max-width: 250px;
     min-height: 60px;
     padding: 10px;
     background-color: #362f4b;
-    border-radius: 5px;
+    border: 5px solid #1f1835;
 }
 
 #clock:hover {
@@ -73,7 +76,7 @@ header {
 }
 
 .blink {
-    font-size: 2vw;
+    font-size: 35px;
     font-weight: 900;
     color:orange;
 }
@@ -144,6 +147,7 @@ nav {
     padding: 10px 0 10px;
     background-color: #362f4b;
     border-radius: 5px;
+    border: 5px solid #1f1835;
 }
 
 nav > a {
@@ -159,7 +163,9 @@ nav a:hover {
 footer {
     margin: 10px 0 10px 0;
     width: 100%;
+    height: 50px;
     text-align: center;
+    vertical-align: bottom;
 }
 
 footer:hover {
@@ -193,7 +199,10 @@ img.center { /* img element and center class */
 }
 
 #register {
-    float: right; 
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    /* float: right;  */
     width: 110px; 
     height: 40px;
     padding: 5px;
@@ -202,6 +211,7 @@ img.center { /* img element and center class */
     color: white;
     border-radius: 2px;
     cursor: pointer;
+    border: 3px solid #1f1835;
 }
 
 #register:hover {
