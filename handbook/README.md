@@ -296,6 +296,8 @@ There are four different techniques to create multicolumn layouts
   Here the total width will be 140px and height will be 240px. To tackle this we would use `box-sizing` property which will keep the size of the element fixed
   but will decreasie the content space inside the element.
 
+- Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+
 ### Margin Collapse
 - Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. This does not happen on left and right margins! Only top and bottom margins!
 

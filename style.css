@@ -216,3 +216,7 @@ rather than to the parent, that way children can individually un-blur. */
 #register:hover {
     color:cyan;
 }
+
+.indent-para {
+    text-indent: 20px;
+}
