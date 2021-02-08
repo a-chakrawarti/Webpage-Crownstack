@@ -298,8 +298,40 @@ There are four different techniques to create multicolumn layouts
 
 - Total element width = width + left padding + right padding + left border + right border + left margin + right margin
 
+- An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+
 ### Margin Collapse
 - Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. This does not happen on left and right margins! Only top and bottom margins!
+
+## >| CSS Text
+- `vertical-align` property sets the vertical alignment of an element. Values are top, middle and bottom.
+- `text-decoration` property has values none, overline, underline, line-through.
+- `text-transform` property has uppercase, lowercase and capitalize values.
+- `text-indent` property is used to specify the indentation of the first line of a text.
+- `letter-spacing` property is used to specify the space between the characters in a text.
+- `line-height` property is used to specify the space between lines. The default line height in most browsers is about 110% to 120%.
+- `word-spacing` property is used to specify the space between the words in a text.
+- `white-space` property specifies how white-space inside an element is handled.
+- `text-shadow` property adds shadow to text. Usage:
+    ```css
+    h1 {
+    text-shadow: 2px 2px 5px red;
+    }
+    ```
+    - 2px, 2px: horizontal, vertical shadow
+    - 5px: blur
+    - color: red
+
+- Difference between Serif and Sans-Serif fonts:
+![serif-vs-sans-serif](./serif.gif)
+   - Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+   - Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+   - Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. 
+   - Cursive fonts imitate human handwriting.
+   - Fantasy fonts are decorative/playful fonts.
+- `font-family` property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. The font names should be separated with comma.
+Usage: `font-family: "Times New Roman", Times, serif;`
+
 
 
 ## >| Max-width, Max-height & Min-width, Min-height
