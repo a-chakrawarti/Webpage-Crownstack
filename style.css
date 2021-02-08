@@ -11,6 +11,9 @@ body {
     font-family: 'Sawarabi Gothic', sans-serif;
 }
 
+/* The >* part which is key: apply blur to the children individually
+rather than to the parent, that way children can individually un-blur. */
+
 body>*:hover {
     outline: 2px dotted red;
     outline-offset: 3px;
@@ -47,6 +50,9 @@ header {
 }
 
 #clock {
+    position:fixed;
+    bottom: 0;
+    right: 0;
     color: whitesmoke;
     font-size: 15px;
     text-align: right;
@@ -118,15 +124,14 @@ a:hover {
     color: black;
 }
 
-/* #row01 {
+#data-table tr:hover {
+    background-color: rgba(192, 59, 59, 0.434);
+}
+
+/* #data-table tbody tr:first-child td:last-child {
     background-color: #f6f6f672;
     color: black;
 } */
-
-#data-table tbody tr:first-child td:last-child {
-    background-color: #f6f6f672;
-    color: black;
-}
 
 ul {
     list-style-type:square;
@@ -169,6 +174,7 @@ img.center { /* img element and center class */
     display: block;
     margin-left: auto;
     margin-right: auto;
+    cursor: wait;
 }
 
 #bgcolor {
@@ -178,27 +184,9 @@ img.center { /* img element and center class */
     visibility: hidden;
 }
 
-/* #color-wheel-img {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin: 0;
-    background-image: url('./assets/color-circle.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-} */
-
 #color-value {
     font-size: 15px;
 }
-
-/* The >* part which is key: apply blur to the children individually
-rather than to the parent, that way children can individually un-blur. */
-
-/* .hero>* {
-    filter: blur(2px);
-} */
 
 .default {
     color: white;
@@ -213,6 +201,7 @@ rather than to the parent, that way children can individually un-blur. */
     border: none;
     color: white;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 #register:hover {

@@ -3,6 +3,10 @@
 - [CSS Tricks](https://css-tricks.com/)
 - [HTML: w3Schools](https://www.w3schools.com/html/default.asp)
 
+# FAQ
+
+- [Difference between display: none; vs visibility: hidden;]()
+
 # HTML (Hyper Text Markup Language) 
 
 - `<!DOCTYPE>` declaration represents the document type and `<!DOCTYPE html>` is declaration for HTML5.
@@ -402,18 +406,51 @@ In RGBA and HSLA (A specifies the opacity for a color) The alpha parameter is a 
 - The CSS `margin` property defines a margin (space) outside the border
 
 -  One can change the link state colors, by using CSS, A link can also be styled as a button, by using CSS.
-    ```css
-    a:link {
-    }
+   - a:link - a normal, unvisited link
+   - a:visited - a link the user has visited
+   - a:hover - a link when the user mouses over it
+   - a:active - a link the moment it is clicked
+- When setting the style for several link states, there are some order rules:
 
-    a:visited {
-    }
+   - a:hover MUST come after a:link and a:visited
+   - a:active MUST come after a:hover
 
-    a:hover {
-    }
-
-    a:active {
-    }
-    ````
+- `<span style="cursor: progress">progress</span><br>` thats how to add different cursors to different elements in a webpage.
 
 - Use the CSS `float` property to let the image float to the right or to the left of a text.
+
+## >| CSS Display
+
+`display` property specifies if/how an element is displayed. Most elements have a display value either `block` or `inline`.
+- Block-Level elements: Starts on a new-line takes up full width, example: `<div>`, `<h1>-<h6>`, `<header>`, `<footer>`, `<form>` etc
+- Inline elements: Doesn't start in a new-line and takes up width as necessary, example: `<span>`, `<a>`, `<img>` etc
+- `display: none;` is commonly used with JavaScript to hide and show elements without deleting and recreating them. Example: The `<script>` element uses none as default.
+
+### `display: none;` vs `visibility: hidden;`
+- `display: none` : Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there
+- `visibility:hidden;` : The element will still take up the same space as before. The element will be hidden, but still affect the layout
+
+## >| CSS Layout: The position property
+- The `position` property has 5 values using which an element can be positioned top, right, bottom and left. One cannot use the top, right, bottom and left property without specifying the position property of that element.
+
+1. `position: static;` : default, not affected by TRBL properties.
+2. `position: relative` : TRBL relative to its normal position. No auto adjust will take place by other element.
+3. `position: fixed` : An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+
+
+## >| Miscellaneous
+- [CSS Units](https://www.w3schools.com/cssref/css_units.asp)
+- [Font Pairing](https://www.w3schools.com/css/css_font_pairings.asp)
+
+
+# Responsive Elements
+
+## >| Table
+
+```html
+<div style="overflow-x:auto;">
+    <table>
+        ...
+    </table>
+</div>
+```
