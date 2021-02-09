@@ -297,9 +297,12 @@ There are four different techniques to create multicolumn layouts
       padding: 20px;
   }
   ```
-  Here the total width will be 140px and height will be 240px. To tackle this we would use `box-sizing` property which will keep the size of the element fixed
-  but will decreasie the content space inside the element.
+  ### Box-Sizing
 
+  Here the total width will be 140px and height will be 240px. To tackle this we would use `box-sizing` property which will keep the size of the element fixed
+  but will decrease the content space inside the element.
+
+- The box-sizing property allows us to include the padding and border in the box's total width (and height), making sure that the padding stays inside of the box and that it does not break.  
 - Total element width = width + left padding + right padding + left border + right border + left margin + right margin
 
 - An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
@@ -405,19 +408,11 @@ In RGBA and HSLA (A specifies the opacity for a color) The alpha parameter is a 
 - The CSS `padding` property defines a padding (space) between the text and the border.
 - The CSS `margin` property defines a margin (space) outside the border
 
--  One can change the link state colors, by using CSS, A link can also be styled as a button, by using CSS.
-   - a:link - a normal, unvisited link
-   - a:visited - a link the user has visited
-   - a:hover - a link when the user mouses over it
-   - a:active - a link the moment it is clicked
-- When setting the style for several link states, there are some order rules:
-
-   - a:hover MUST come after a:link and a:visited
-   - a:active MUST come after a:hover
-
 - `<span style="cursor: progress">progress</span><br>` thats how to add different cursors to different elements in a webpage.
 
 - Use the CSS `float` property to let the image float to the right or to the left of a text.
+- The `clear` property specifies what elements can float beside the cleared element and on which side.
+- If an element is taller than the element containing it, and it is floated, it will overflow outside of its container. You can use the "clearfix" hack to fix this.
 
 ## >| CSS Display
 
@@ -425,6 +420,12 @@ In RGBA and HSLA (A specifies the opacity for a color) The alpha parameter is a 
 - Block-Level elements: Starts on a new-line takes up full width, example: `<div>`, `<h1>-<h6>`, `<header>`, `<footer>`, `<form>` etc
 - Inline elements: Doesn't start in a new-line and takes up width as necessary, example: `<span>`, `<a>`, `<img>` etc
 - `display: none;` is commonly used with JavaScript to hide and show elements without deleting and recreating them. Example: The `<script>` element uses none as default.
+
+- Compared to `display: inline`, the major difference is that `display: inline-block` allows to set a width and height on the element.
+
+- Also, with `display: inline-block`, the top and bottom margins/paddings are respected, but with `display: inline` they are not.
+
+- Compared to `display: block`, the major difference is that `display: inline-block` does not add a line-break after the element, so the element can sit next to other elements.
 
 ### `display: none;` vs `visibility: hidden;`
 - `display: none` : Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there
@@ -436,6 +437,57 @@ In RGBA and HSLA (A specifies the opacity for a color) The alpha parameter is a 
 1. `position: static;` : default, not affected by TRBL properties.
 2. `position: relative` : TRBL relative to its normal position. No auto adjust will take place by other element.
 3. `position: fixed` : An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+4. `position: absolute` : Positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+5. `position: sticky` : An element with position: sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+![position](./position.png)
+
+> `position: relative` places an element relative to its current position without changing the layout around it, whereas `position: absolute` places an element relative to its parent’s position and changing the layout around it.
+
+## >| CSS Overflow
+
+The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+The overflow property only works for block elements with a specified height.
+- `overflow: visible;` : clipped, renders outside the box
+- `overflow: hidden` : clipped, and the rest of the content is hidden
+- `overflow: scroll` : clipped, adds a scroll bar inside the box
+- `overflow: auto` : similar to `scroll` value, adds scrolls whenever necessary.
+- `overflow-x` and `overflow-y` to how manage overflow of content in horizontally and vertically.
+
+## >| CSS Combinators
+A combinator is something that explains the relationship between the selectors.
+
+
+There are four different combinators in CSS:
+
+- descendant selector (space): matches all elements that are descendants of a specified element
+  - Example: `div p {}` selects all `<p>` elements inside `<div>` elements
+- child selector (>):  selects all elements that are the children of a specified element
+  - Example: `div > p {}` selects all `<p>` elements that are children of a `<div>` element
+- adjacent sibling selector (+): is used to select an element that is directly after another specific element. Sibling elements must have the same parent element.
+  - Example: `div + p` selects the first `<p>` element that are placed immediately after `<div>` elements.
+- general sibling selector (~): selects all elements that are siblings of a specified element
+  - Example: `div ~ p` selects all `<p>` elements that are siblings of `<div>` elements.
+
+Reference: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators
+
+## >| CSS Pseudo-class
+A pseudo-class is used to define a special state of an element
+```css
+selector:pseudo-class {
+  property: value;
+}
+```
+- Anchor Pseudo-class
+
+- One can change the link state colors, by using CSS, A link can also be styled as a button, by using CSS.
+   - a:link - a normal, unvisited link
+   - a:visited - a link the user has visited
+   - a:hover - a link when the user mouses over it
+   - a:active - a link the moment it is clicked
+   - When setting the style for several link states, there are some order rules:
+      - a:hover MUST come after a:link and a:visited
+      - a:active MUST come after a:hover
 
 
 ## >| Miscellaneous

@@ -50,6 +50,7 @@ header {
     position: sticky;
     background-color: inherit;
     top: 0px;
+    opacity: 0.9;
 }
 
 #clock {
@@ -176,13 +177,6 @@ figcaption {
     text-align: center;
 }
 
-img.center { /* img element and center class */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: wait;
-}
-
 #bgcolor {
     padding: 0;
     width: 0;
@@ -222,8 +216,20 @@ img.center { /* img element and center class */
     text-indent: 20px;
 }
 
- p {
+p {
      letter-spacing: 1.3px;
      word-spacing: 1.5px;
      line-height: 2;
- }
+}
+
+img.center { /* img element and center class */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: wait;
+    display: none;
+}
+
+.w3-row-padding:hover img {
+    display: block;
+}
