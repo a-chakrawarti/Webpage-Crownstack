@@ -489,6 +489,21 @@ selector:pseudo-class {
       - a:hover MUST come after a:link and a:visited
       - a:active MUST come after a:hover
 
+Reference: https://www.w3schools.com/css/css_pseudo_classes.asp
+
+## >| CSS Pseudo-elements
+A CSS pseudo-element is used to style specified parts of an element.
+
+```css
+selector::pseudo-element {
+  property: value;
+}
+```
+- The `::before` pseudo-element can be used to insert some content before the content of an element. Example: `h1::before {}`
+- The `::after` pseudo-element can be used to insert some content after the content of an element. Example: `h1::after {}`
+- The `::marker` pseudo-element selects the markers of list items. Example: `::marker {color: red;}`
+- The `::selection` pseudo-element matches the portion of an element that is selected by a user. `::selection {color: blue; background-color: white;}`
+   - The following CSS properties can be applied to `::selection`: `color`, `background`, `cursor`, and `outline`.
 
 ## >| Miscellaneous
 - [CSS Units](https://www.w3schools.com/cssref/css_units.asp)

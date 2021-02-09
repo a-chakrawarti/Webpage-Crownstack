@@ -11,6 +11,11 @@ body {
     font-family: 'Sawarabi Gothic', sans-serif;
 }
 
+::selection {
+    color: red;
+    background-color: white;
+}
+
 /* The >* part which is key: apply blur to the children individually
 rather than to the parent, that way children can individually un-blur. */
 
