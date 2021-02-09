@@ -272,7 +272,7 @@ There are four different techniques to create multicolumn layouts
 - [HTML Element Reference](https://www.w3schools.com/tags/default.asp)
 - [HTML Entities](https://www.w3schools.com/html/html_entities.asp)
 
-# **CSS (Cascading Style Sheets)**
+# CSS (Cascading Style Sheets)
 
 - Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
     ```css
@@ -282,7 +282,7 @@ There are four different techniques to create multicolumn layouts
     }
     ```
 
-## _**>| Box Model**_
+## >| Box Model
 
 ![box-model](./box-model.png)
 - The CSS `margin` properties are used to create space around elements, outside of any defined borders. Negative values are allowed.
@@ -573,6 +573,15 @@ Reference: https://www.w3schools.com/css/css3_transitions.asp
         ...
     </table>
 </div>
+```
+
+## >| Image
+An image to scale down if it has to, but never scale up to be larger than its original size.
+```css
+img {
+  max-width: 100%;
+  height: auto;
+}
 ```
 
 # Sites to look into:

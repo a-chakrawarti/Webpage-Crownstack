@@ -244,3 +244,10 @@ img.center { /* img element and center class */
 .w3-row-padding:hover img {
     display: block;
 }
+
+.two-column {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+}
