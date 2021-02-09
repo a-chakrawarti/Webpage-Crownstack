@@ -471,6 +471,22 @@ There are four different combinators in CSS:
 
 Reference: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators
 
+## >| CSS Attribute Selectors
+It is possible to style HTML elements that have specific attributes or attribute values.
+- The `[attribute]` selector is used to select elements with a specified attribute.
+   - Example: selects all `<a>` elements with a target attribute 
+        ```css
+        a[target] {
+            background-color: yellow;
+        }
+        ```
+- The `[attribute="value"]` selector is used to select elements with a specified attribute and value. Example `a[target="_blank"] {}`
+- The `[attribute~="value"]` selector is used to select elements with an attribute value containing a specified word. Example: selects all elements with a title attribute that contains a space-separated list of words, one of which is "flower" `[title~="flower"]`
+
+Reference: https://www.w3schools.com/css/css_attribute_selectors.asp
+
+
+
 ## >| CSS Pseudo-class
 A pseudo-class is used to define a special state of an element
 ```css
@@ -505,9 +521,24 @@ selector::pseudo-element {
 - The `::selection` pseudo-element matches the portion of an element that is selected by a user. `::selection {color: blue; background-color: white;}`
    - The following CSS properties can be applied to `::selection`: `color`, `background`, `cursor`, and `outline`.
 
+Reference: https://www.w3schools.com/css/css_pseudo_elements.asp
+
+
+## >| Specificity
+If there are two or more conflicting CSS rules that point to the same element, the browser follows some rules to determine which one is most specific and therefore wins out.
+Think of specificity as a score/rank that determines which style declarations are ultimately applied to an element.
+The universal selector (*) has low specificity, while ID selectors are highly specific.
+1. Inline styles, i.e; style attribute - 1000
+2. ID/each - 100
+3. Class, Attribute and Pseudo-class (each) - 10
+4. Elements(h1, p etc), pseudo-elements(::before etc) - 1
+
+
 ## >| Miscellaneous
 - [CSS Units](https://www.w3schools.com/cssref/css_units.asp)
 - [Font Pairing](https://www.w3schools.com/css/css_font_pairings.asp)
+- [CSS Navbar](https://www.w3schools.com/css/css_navbar.asp)
+- [CSS Forms](https://www.w3schools.com/css/css_form.asp)
 
 
 # Responsive Elements

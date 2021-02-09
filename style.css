@@ -211,10 +211,12 @@ figcaption {
     border-radius: 2px;
     cursor: pointer;
     border: 3px solid #1f1835;
+    
 }
 
 #register:hover {
     color:cyan;
+    box-shadow: 0 3px 15px 2px rgba(0,255,255, 0.7);
 }
 
 .indent-para {
