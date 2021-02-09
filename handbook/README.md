@@ -1,11 +1,10 @@
 # Quick Links:
 
-- [CSS Tricks](https://css-tricks.com/)
-- [HTML: w3Schools](https://www.w3schools.com/html/default.asp)
+- [CSS](https://github.com/a-chakrawarti/Webpage-Crownstack/tree/master/handbook#css-cascading-style-sheets)
 
-# FAQ
+# !FAQ
 
-- [Difference between display: none; vs visibility: hidden;]()
+- [Difference between display: none; vs visibility: hidden;](https://github.com/a-chakrawarti/Webpage-Crownstack/tree/master/handbook#difference-display-none-vs-visibility-hidden)
 
 # HTML (Hyper Text Markup Language) 
 
@@ -273,7 +272,7 @@ There are four different techniques to create multicolumn layouts
 - [HTML Element Reference](https://www.w3schools.com/tags/default.asp)
 - [HTML Entities](https://www.w3schools.com/html/html_entities.asp)
 
-# CSS (Cascading Style Sheets)
+# **CSS (Cascading Style Sheets)**
 
 - Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
     ```css
@@ -283,7 +282,7 @@ There are four different techniques to create multicolumn layouts
     }
     ```
 
-## >| Box Model
+## _**>| Box Model**_
 
 ![box-model](./box-model.png)
 - The CSS `margin` properties are used to create space around elements, outside of any defined borders. Negative values are allowed.
@@ -307,7 +306,7 @@ There are four different techniques to create multicolumn layouts
 
 - An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
 
-### Margin Collapse
+### _Margin Collapse_
 - Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. This does not happen on left and right margins! Only top and bottom margins!
 
 ## >| CSS Text
@@ -427,7 +426,7 @@ In RGBA and HSLA (A specifies the opacity for a color) The alpha parameter is a 
 
 - Compared to `display: block`, the major difference is that `display: inline-block` does not add a line-break after the element, so the element can sit next to other elements.
 
-### `display: none;` vs `visibility: hidden;`
+### _Difference: `display: none;` vs `visibility: hidden;`_
 - `display: none` : Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there
 - `visibility:hidden;` : The element will still take up the same space as before. The element will be hidden, but still affect the layout
 
@@ -536,6 +535,8 @@ The universal selector (*) has low specificity, while ID selectors are highly sp
 ## >| Box Shadow
 
 Reference : https://www.w3schools.com/css/css3_shadows_box.asp
+
+
 Reference : https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 
 ## >| CSS 2D Transform
@@ -553,7 +554,7 @@ Allow to move, rotate, scale, and skew elements.
 
 ## >| CSS Transitions
 
-
+Reference: https://www.w3schools.com/css/css3_transitions.asp
 
 ## >| Miscellaneous
 - [CSS Units](https://www.w3schools.com/cssref/css_units.asp)
@@ -573,3 +574,7 @@ Allow to move, rotate, scale, and skew elements.
     </table>
 </div>
 ```
+
+# Sites to look into:
+- [CSS Tricks](https://css-tricks.com/)
+- [HTML: w3Schools](https://www.w3schools.com/html/default.asp)
