@@ -75,6 +75,7 @@ header {
 
 #clock:hover {
     color: cyan;
+    transform: scale(1.1, 1.2);
 }
 
 #mark {

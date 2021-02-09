@@ -533,6 +533,27 @@ The universal selector (*) has low specificity, while ID selectors are highly sp
 3. Class, Attribute and Pseudo-class (each) - 10
 4. Elements(h1, p etc), pseudo-elements(::before etc) - 1
 
+## >| Box Shadow
+
+Reference : https://www.w3schools.com/css/css3_shadows_box.asp
+Reference : https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+
+## >| CSS 2D Transform
+Allow to move, rotate, scale, and skew elements.
+- The `transform` property can use the following 2D transformation methods.
+   - translate(): moves an element from its current position, provided X and Y. Example: `transform: translate(50px, 100px);`, 50px right, 100px down.
+   - rotate(): rotates an element clockwise or counter-clockwise according to a given degree. Example `transform: rotate(20deg);` clockwise, -ve value will rotate counter-clockwise.
+   - scale(): increases or decreases the size of an element, provided W and H. Example: `transform: scale(2, 3);`, 2 times width, 3 times height.
+      - scaleX(): increases or decreases the width of an element.
+      - ScaleY(): increases or decreases the height of an element.
+   - skew(): skews an element along the X and Y-axis by the given angles. Example: `transform: skew(20deg, 10deg);` 20deg along X-axis, 10deg along Y-axis.
+      - skewX(): skews an element along the X-axis by the given angle. Example: `transform: skewX(20deg)`
+      - skewY(): skews an element along the Y-axis by the given angle.
+   - matrix(): combines all the 2D transform methods into one. The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements. Usage: `matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())`. Example: `transform: matrix(1, -0.3, 0, 1, 0, 0);`
+
+## >| CSS Transitions
+
+
 
 ## >| Miscellaneous
 - [CSS Units](https://www.w3schools.com/cssref/css_units.asp)
