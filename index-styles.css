@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background-color: #1b2531;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    width: 40x;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 77);
+
+}
+.nav ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 25%;
+    list-style: none;
+    right: 20px;
+    display: inline;
+}
+
+.nav ul > li {
+    padding: 10px;
+    float: left;
+}
+
+.nav li > a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav li > a:hover {
+    color: cyan;
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url(./assets/icon.png);
+    background-size: contain;
+}
+
+.icon-text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 8px;
+    left: 55px;
+}

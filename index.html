@@ -1,189 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun with HTML and CSS</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./assets/track.png" type="image/gif" sizes="24x24">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./index-styles.css"/>
 </head>
-
 <body>
-    <!-- Top Border -->
-    <div class="top"></div>
-    <header>
-        <span class="blink">>_ </span><span class="blink default">Fun with <span id="mark">HTML <span
-                    class="default">and</span> CSS &#128526;</span></span>
-
-        <button onclick="window.location.href='./form-validation/form-validation.html'" id="register">Registration</button>
-        <br>
-        <span style="font-size: 20px;">&emsp;&emsp; with a bit of <span id="mark">JavaScript</span> 🤫</span>
-    </header>
-
-    <!-- Background color changer and registration -->
-    <div>
-        <label for="bgcolor"><img src="./assets/color-circle.png" width="24px" height="24px"></label>
-        <!-- <label for="bgcolor"><span id="color-wheel-img"></span></label> -->
-        <input type="color" id="bgcolor"><span id="color-value">#0d1117</span>
-    </div>
-
-    <!-- Navigation Links -->
-    <nav>
-        <a href="https://github.com/a-chakrawarti/Webpage-Crownstack" target="_blank"><img
-                src="./assets/GitHub-Mark-Light-32px.png" style="width: 16px; height: 16px;"> Source-Code </a><br>
-        <a href="https://github.com/a-chakrawarti/Webpage-Crownstack/tree/master/handbook" target="_parent"><img
-                src="./assets/notes.png" style="width: 16px; height: 16px;"> HTML and CSS Notes</a><br>
-        <a href="mailto:anupam.chakraborty@crownstack.com"><img src="./assets/gmail.png"> Reach out: Email</a>
-    </nav>
-
-    <div id="alert">⚠️ This site is NOT optimized for mobile devices ⚠️</div>
-
-    <div class="table-contents">
-        <h2>Table of Contents:</h2>
+    <div class="nav">
+        <span class="icon">
+            <span class="icon-text">navIcon</span>
+        </span>
         <ul>
-            <li><a href="#obesity">What is Obesity?</a>
-                <ul>
-                    <li>Criteria for Designation of Weight and Health Status</li>
-                </ul>
-            </li>
-            <li><a href="#foodpyramid">Food Pyramid</a></li>
+            <li><a href="#">Homepage</a></li>
+            <li><a href="https://github.com/a-chakrawarti/Webpage-Crownstack" target="_blank">GitHub</a></li>
+            <li><a href="#">Assignment</a></li>
+            <li><a href="./practice-work/index.html">Practice</a></li>
         </ul>
     </div>
-
-    <h2 class="title" id="obesity">> What is Obesity?</h2>
-    <div class="w3-row-padding">
-        <div class="w3-half two-column">
-            <p>
-                Obesity is a complex disease involving an excessive amount of body fat. Obesity isn't just a cosmetic
-                concern. It is a medical problem that increases your risk of other diseases and health problems, such as
-                heart disease, diabetes, high blood pressure and certain cancers.
-            </p>
-
-            <p class="indent-para"> There are many reasons why some people have difficulty avoiding obesity. Usually,
-                obesity results
-                from a combination of inherited factors, combined with the environment and personal diet and exercise
-                choices.
-            </p>
-
-            <p class="indent-para">
-                Obesity is approaching <mark>epidemic proportions</mark> in the US and many other industrialized
-                countries. In the US the
-                prevalence of obesity now exceeds 30% of the population and represents the highest rate of obesity
-                worldwide. Since 1980 the prevalence of obesity in adults in the US has increased 2-fold. However,
-                much
-                more
-                disturbing is the fact that in this same time period the rate of childhood and adolescent obesity
-                increased
-                3-fold.
-            </p>
-        </div>
-
-        <div class="w3-half">
-            <figure>
-                <img src="./assets/eating.gif" class="center" width="450" height="250" alt="Obesity">
-            </figure>
-        </div>
-    </div>
-    <div>
-        <h3>> Criteria for Designation of Weight and Health Status</h3>
-        <p>The Table below associates a given BMI range with the risk for cardiovascular disease and <abbr
-                title="buildup of fats, cholesterol etc in and on your artery walls which can restrict blood flow">atherosclerosis</abbr>.
-
-            <br><br>Obesity is defined as a physical condition in which an individual has a <b>body mass index (BMI)</b>
-            ≥30kg/m<sup>2</sup>. The BMI
-            is a measure of the relationship between an individuals weight and height. The BMI is calculated by dividing
-            a
-            persons weight in kilograms by the square of their height in meters.
-        </p>
-        <table id="data-table">
-            <tr>
-                <th>BMI</th>
-                <th>Category</th>
-                <th>Waist less than or equal to 40 in. (men) or 35 in. (women)</th>
-                <th>Waist greater than 40 in. (men) or 35 in. (women)</th>
-            </tr>
-            <tr>
-                <td>18.5 or less</td>
-                <td>underweight</td>
-                <td>N/A</td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>18.5-24.9</td>
-                <td>normal</td>
-                <td>N/A</td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>25.0-29.9</td>
-                <td>overweight</td>
-                <td>increased risk</td>
-                <td>high risk</td>
-            </tr>
-            <tr>
-                <td>30.0-34.9</td>
-                <td>obese or class 1 obesity</td>
-                <td>high risk</td>
-                <td>very high risk</td>
-            <tr>
-                <td>35.0-39.9</td>
-                <td>obese or class 2 obesity</td>
-                <td>very high risk</td>
-                <td>very high risk</td>
-            </tr>
-            <tr>
-                <td>40 or greater</td>
-                <td>extremely obese or class 3 obesity</td>
-                <td>extremely high risk</td>
-                <td>extremely high risk</td>
-            </tr>
-        </table>
-        <small><a href="http://themedicalbiochemistrypage.org/obesity-metabolic-and-clinical-consequences/">Source:
-                http://themedicalbiochemistrypage.org</a></small>
-    </div>
-    </div>
-
-    <div>
-        <h2 class="title" id="foodpyramid">> Food Pyramid and whats wrong with the model?</h2>
-        <div class="w3-row-padding">
-            <div class="w3-half">
-                <p>The Food Guide Pyramid was introduced by the United States Department of Agriculture (USDA) in 1992
-                    and it included six blocks. It was set up with a “base” of grains and carbohydrates (6–11 servings
-                    of bread, rice, pasta, etc.), followed by the fruit (2–4 servings) and vegetables (3–5 servings)
-                    group, then the dairy group (2–3 servings), and the protein group, including meat, eggs, nuts, and
-                    beans (2–3 servings), and was topped off, of course, by the fats group at the peak of the pyramid.
-                    <br><br>
-                <p class="indent-para">The problem was the Food Guide Pyramid model’s success in encouraging Americans to
-                    make food choices
-                    that prioritized consuming carbohydrates, which often resulted in diets dominated by excess
-                    calories, sugar, and starches.</p>
-                </p>
-            </div>
-            <div class="w3-half">
-                <figure>
-                    <img class="center" src="./assets/foodpyramid.png" width="300" height="250" usemap=#foodpyramid>
-                    <figcaption>Food Pyramid, click on each to know more</figcaption>
-                    <map name="foodpyramid">
-                        <area shape="rect" coords="0,0,300,100" href="https://medlineplus.gov/carbohydrates.html"
-                            target="_blank" alt="Carbs" onclick="notify('Carbohydrates')" title="Carbs">
-                        <area shape="rect" coords="0,100,300,175" href="https://medlineplus.gov/dietaryproteins.html"
-                            target="_blank" alt="Proteins" onclick="notify('Proteins')" title="Protein">
-                        <area shape="rect" coords="0,175,300,250" href="https://medlineplus.gov/dietaryfats.html"
-                            target="_blank" alt="Fats" onclick="notify('Fats')" title="Fats">
-                    </map>
-                </figure>
-            </div>
-        </div>
-    </div>
-    <!-- <p>This is just a canvas</p>
-    <canvas id="myCanvas" width="300px" height="200px"></canvas> -->
-    <hr>
-    <footer>© a-chakrawarti 2020-21</footer>
-
 </body>
-<script src="./date-time.js"></script>
-<script src="./scripts.js"></script>
-
+<script src="index-script.js"></script>
 </html>
