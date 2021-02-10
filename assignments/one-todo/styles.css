@@ -5,3 +5,10 @@
 li button {
     margin: 10px;
 }
+
+.version-2 {
+    position: absolute;
+    font-size: large;
+    top: 20px;
+    right: 30px;
+}

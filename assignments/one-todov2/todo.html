@@ -7,18 +7,15 @@
     <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
-    <h1 class="ml-20">To-Do App</h1>
+    <h1 class="ml-20">To-Do App<p>v2</p></h1>
     <div class="ml-20">
-        <label for="new-task">Add a task:</label>
-        <input type="text" name="new-task" id="new-task">
-        <button onclick="addTask()">Save</button>
+        <!-- <label for="new-task">Add a task:</label> -->
+        <input class="input-text" type="text" name="new-task" id="new-task" placeholder="Add a task ...">
+        <!-- <button onclick="addTask()">Save</button> -->
     </div>    
     <div>
-        <ul id="task-list">
+        <ul class="flex-list" id="task-list">
         </ul>
-    </div>
-    <div class="version-2 ml-20">
-        <a href="../one-todov2/todo.html">Version 2</a>
     </div>
 </body>
 <script src="./script.js"></script>
