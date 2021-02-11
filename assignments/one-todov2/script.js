@@ -1,3 +1,8 @@
+/**
+ * @author Anupam Chakrawarti
+ */
+
+
 'use-strict;'
 
 const taskElement = document.getElementById('input-task');
@@ -56,19 +61,18 @@ function doneTask(btn) {
 
     // blur the text content when done
     var textSpan = document.getElementsByClassName('task-text');
-    textSpan[textSpan.length -1].style.filter = "blur(1.5px)";
+    textSpan[textSpan.length - 1].style.filter = "blur(1.5px)"; // needs to get the current index of the element clicked on
 
     // hide the tick element when clicked 
     var doneBtnElement = document.getElementsByClassName(btn.className);
     console.log(doneBtnElement[doneBtnElement.length - 1]);
-    doneBtnElement[doneBtnElement.length - 1].style.display = "None";
+    doneBtnElement[doneBtnElement.length - 1].style.display = "None"; // needs to get the current index of the element clicked on
 }
 
 function deleteTask(btn) {
     var ele = document.getElementById(btn.parentNode.id);
     listElement.removeChild(ele);
 }
-
 
 function editTask(btn) {   
     taskElement.value = btn.parentNode.id;

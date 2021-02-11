@@ -34,6 +34,12 @@ li {
     margin: 15px 10px;
     list-style: none;
     padding: 20px;
+    transition: 0.5s transform;
+    transition-timing-function: ease-out;
+}
+
+li:hover {
+    transform: scale(1.05, 1.05);
 }
 
 .flex-list {
