@@ -57,6 +57,11 @@ function doneTask(btn) {
     // blur the text content when done
     var textSpan = document.getElementsByClassName('task-text');
     textSpan[textSpan.length -1].style.filter = "blur(1.5px)";
+
+    // hide the tick element when clicked 
+    var doneBtnElement = document.getElementsByClassName(btn.className);
+    console.log(doneBtnElement[doneBtnElement.length - 1]);
+    doneBtnElement[doneBtnElement.length - 1].style.display = "None";
 }
 
 function deleteTask(btn) {
