@@ -1,75 +1,71 @@
 'use-strict;'
 
+const taskElement = document.getElementById('input-task');
 const listElement = document.getElementById('task-list');
-const taskElement = document.getElementById('new-task');
 
-function setTask(taskName) {
-    if (taskName == '') {alert('Task cannot be blank!');}
-    else {
-        // console.log(taskName);
-        var li = document.createElement('li');
-        var taskTextElement = document.createElement('span'); 
-        taskTextElement.setAttribute("class", "task-text");
-        taskTextElement.innerHTML = taskName;
-        li.setAttribute("id", taskName);
-        // li.appendChild(document.createTextNode(taskName));
-        li.appendChild(taskTextElement);
-        listElement.appendChild(li);
-
-        // edit button
-        var editButton = document.createElement('span')
-        // editButton.innerText = "Edit"
-        // editButton.setAttribute("id", taskName);
-        editButton.setAttribute("class", "edit-btn");
-        editButton.setAttribute("onclick", "editTask(this)");
-
-        // delete button
-        var deleteButton = document.createElement('span')
-        // deleteButton.innerText = "Delete"
-        // deleteButton.setAttribute("id", taskName);
-        deleteButton.setAttribute("class", "delete-btn");
-        deleteButton.setAttribute("onclick", "deleteTask(this)");
-
-        // done button
-        var doneButton = document.createElement('span')
-        // doneButton.setAttribute("id", taskName);
-        doneButton.setAttribute("class", "done-btn");
-        doneButton.setAttribute("onclick", "done(this)");
-
-        // append buttons
-        li.appendChild(editButton);
-        li.appendChild(deleteButton);
-        li.appendChild(doneButton);
-        
-    }
+function inputTask() {
+    var taskValue = taskElement.value;
+    if (taskValue == '') {return null;}
+    addTask(taskValue);
+    taskElement.value = '';
 }
 
-function done(pid) {
-    var ele = document.getElementById(pid.parentNode.id);
-    ele.style.textDecoration = "line-through";
-    ele.style.backgroundColor = "gray";
+function addTask(taskName) {
+    var li = document.createElement('li');
+    li.setAttribute("id", taskName);
+
+    // create a span element to hold the task text
+    var taskTextElement = document.createElement('span'); 
+    taskTextElement.setAttribute("class", "task-text");
+    taskTextElement.innerHTML = taskName;
+
+    li.appendChild(taskTextElement);
+    listElement.appendChild(li);
+
+    // edit button
+    var editButton = document.createElement('span')
+    editButton.setAttribute("class", "edit-btn");
+    editButton.setAttribute("onclick", "editTask(this)");
+
+    // delete button
+    var deleteButton = document.createElement('span')
+    deleteButton.setAttribute("class", "delete-btn");
+    deleteButton.setAttribute("onclick", "deleteTask(this)");
+
+    // done button
+    var doneButton = document.createElement('span')
+    doneButton.setAttribute("class", "done-btn");
+    doneButton.setAttribute("onclick", "doneTask(this)");
+
+    // append buttons
+    li.appendChild(editButton);
+    li.appendChild(deleteButton);
+    li.appendChild(doneButton);
 }
 
 taskElement.addEventListener('keyup', event => {
     if (event.key === 'Enter') { // event.keyCode is deprecated, https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
-        console.log('Event fired!')
-        addTask()
+        inputTask()
     } 
 }, false)
 
-function deleteTask(pid) {
-    var ele = document.getElementById(pid.parentNode.id);
+function doneTask(btn) {
+    var ele = document.getElementById(btn.parentNode.id);
+    ele.style.textDecoration = "line-through";
+    ele.style.backgroundColor = "gray";
+
+    // blur the text content when done
+    var textSpan = document.getElementsByClassName('task-text');
+    textSpan[textSpan.length -1].style.filter = "blur(1.5px)";
+}
+
+function deleteTask(btn) {
+    var ele = document.getElementById(btn.parentNode.id);
     listElement.removeChild(ele);
 }
 
 
-function editTask(pid) {   
-    taskElement.value = pid.parentNode.id;
-    deleteTask(pid);
-}
-
-function addTask() {
-    var taskValue = taskElement.value;
-    setTask(taskValue);
-    taskElement.value = '';
+function editTask(btn) {   
+    taskElement.value = btn.parentNode.id;
+    deleteTask(btn);
 }
