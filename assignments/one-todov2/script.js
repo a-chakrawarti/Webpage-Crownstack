@@ -8,39 +8,46 @@ function setTask(taskName) {
     else {
         // console.log(taskName);
         var li = document.createElement('li');
+        var taskTextElement = document.createElement('span'); 
+        taskTextElement.setAttribute("class", "task-text");
+        taskTextElement.innerHTML = taskName;
         li.setAttribute("id", taskName);
-        li.appendChild(document.createTextNode(taskName));
+        // li.appendChild(document.createTextNode(taskName));
+        li.appendChild(taskTextElement);
         listElement.appendChild(li);
 
         // edit button
         var editButton = document.createElement('span')
         // editButton.innerText = "Edit"
-        editButton.setAttribute("id", taskName);
+        // editButton.setAttribute("id", taskName);
         editButton.setAttribute("class", "edit-btn");
-        editButton.setAttribute("onclick", "editTask(this.id)");
+        editButton.setAttribute("onclick", "editTask(this)");
 
         // delete button
         var deleteButton = document.createElement('span')
         // deleteButton.innerText = "Delete"
-        deleteButton.setAttribute("id", taskName);
+        // deleteButton.setAttribute("id", taskName);
         deleteButton.setAttribute("class", "delete-btn");
-        deleteButton.setAttribute("onclick", "deleteTask(this.id)");
+        deleteButton.setAttribute("onclick", "deleteTask(this)");
+
+        // done button
+        var doneButton = document.createElement('span')
+        // doneButton.setAttribute("id", taskName);
+        doneButton.setAttribute("class", "done-btn");
+        doneButton.setAttribute("onclick", "done(this)");
 
         // append buttons
         li.appendChild(editButton);
         li.appendChild(deleteButton);
+        li.appendChild(doneButton);
         
     }
 }
 
-listElement.addEventListener('click', doneTask, false);
-
-// Reference: https://developer.mozilla.org/en-US/docs/Web/API/Event/target
-function doneTask(event) {
-    if (event.target.tagName === 'LI') {
-        event.target.style.textDecoration = "line-through";
-        event.target.style.backgroundColor = "gray";
-    }
+function done(pid) {
+    var ele = document.getElementById(pid.parentNode.id);
+    ele.style.textDecoration = "line-through";
+    ele.style.backgroundColor = "gray";
 }
 
 taskElement.addEventListener('keyup', event => {
@@ -50,15 +57,15 @@ taskElement.addEventListener('keyup', event => {
     } 
 }, false)
 
-function deleteTask(id) {
-    var ele = document.getElementById(id);
+function deleteTask(pid) {
+    var ele = document.getElementById(pid.parentNode.id);
     listElement.removeChild(ele);
 }
 
 
-function editTask(id) {   
-    taskElement.value = id;
-    deleteTask(id);
+function editTask(pid) {   
+    taskElement.value = pid.parentNode.id;
+    deleteTask(pid);
 }
 
 function addTask() {
