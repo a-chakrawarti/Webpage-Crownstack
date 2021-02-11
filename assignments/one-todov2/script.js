@@ -12,6 +12,11 @@ function inputTask() {
     var taskValue = taskElement.value;
     if (taskValue == '') {return null;}
     addTask(taskValue);
+    clearText();
+}
+
+function clearText() {
+    console.log('clear executed!')
     taskElement.value = '';
 }
 
