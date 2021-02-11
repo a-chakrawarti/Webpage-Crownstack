@@ -13,15 +13,15 @@ function setTask(taskName) {
         listElement.appendChild(li);
 
         // edit button
-        var editButton = document.createElement('button')
-        editButton.innerText = "Edit"
+        var editButton = document.createElement('span')
+        // editButton.innerText = "Edit"
         editButton.setAttribute("id", taskName);
         editButton.setAttribute("class", "edit-btn");
         editButton.setAttribute("onclick", "editTask(this.id)");
 
         // delete button
-        var deleteButton = document.createElement('button')
-        deleteButton.innerText = "Delete"
+        var deleteButton = document.createElement('span')
+        // deleteButton.innerText = "Delete"
         deleteButton.setAttribute("id", taskName);
         deleteButton.setAttribute("class", "delete-btn");
         deleteButton.setAttribute("onclick", "deleteTask(this.id)");
