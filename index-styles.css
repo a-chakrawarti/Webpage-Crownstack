@@ -57,3 +57,41 @@ body {
     top: 8px;
     left: 55px;
 }
+
+.hero-video {
+    position: relative;
+    height: 750px;
+}
+
+.hero-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+
+}
+
+
+.hero-video video {
+    min-width: 100%;
+    height: inherit;
+    object-fit: fill;
+}
+
+.hero-text {
+    position: absolute;
+    top: 25%;
+    left: 44%;
+    color: white;
+    font-size: 36px;
+    z-index: 2;
+    text-align: center;
+    line-height: 20px;
+}
+
+.hero-text span {
+    font-size: small;
+}
