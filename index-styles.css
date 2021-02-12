@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
     margin: 0;
     background-color: #1b2531;
+    font-family: 'Lato', sans-serif;
 }
 
 .nav {
@@ -60,7 +63,7 @@ body {
 
 .hero-video {
     position: relative;
-    height: 750px;
+    height: 550px;
 }
 
 .hero-cover {
@@ -71,27 +74,39 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
-
 }
 
 
 .hero-video video {
     min-width: 100%;
     height: inherit;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .hero-text {
     position: absolute;
     top: 25%;
     left: 44%;
-    color: white;
     font-size: 36px;
     z-index: 2;
     text-align: center;
     line-height: 20px;
+    transition: transform 0.5s;
 }
 
 .hero-text span {
     font-size: small;
+}
+
+.hero-text a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-text a:hover {
+    color: cyan;
+}
+
+.hero-text:hover {
+    transform: scale(1.1, 1.1);
 }

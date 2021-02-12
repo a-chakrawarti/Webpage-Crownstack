@@ -552,6 +552,11 @@ Allow to move, rotate, scale, and skew elements.
       - skewY(): skews an element along the Y-axis by the given angle.
    - matrix(): combines all the 2D transform methods into one. The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements. Usage: `matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())`. Example: `transform: matrix(1, -0.3, 0, 1, 0, 0);`
 
+
+## >| CSS !important
+- The `!important` rule in CSS is used to add more importance to a property/value than normal.
+- Use the `!important` rule, it will override ALL previous styling rules for that specific property on that element.
+
 ## >| CSS Transitions
 
 Reference: https://www.w3schools.com/css/css3_transitions.asp
