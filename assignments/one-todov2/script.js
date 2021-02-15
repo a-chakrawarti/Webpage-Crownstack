@@ -63,7 +63,7 @@ function doneTask(btn) {
     var ele = document.getElementById(btn.parentNode.id);
     // console.log(ele.childNodes);
     ele.style.textDecoration = "line-through";
-    ele.style.backgroundColor = "gray";
+    // ele.style.backgroundColor = "gray";
 
     // blur the text content when done
     ele.childNodes[0].style.filter = "blur(1.5px)";
