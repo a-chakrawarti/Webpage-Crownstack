@@ -16,14 +16,23 @@ function inputTask() {
 }
 
 function clearText() {
-    console.log('clear executed!')
     taskElement.value = '';
+    cardColor = "rgb(41, 42, 47)";
 }
 
+var cardColor;
+let colorId = document.getElementById("bgcolor");
+colorId.addEventListener('input', function (val) {
+    cardColor = val.target.value;
+    // console.log(cardColor);
+});
+
 function addTask(taskName) {
+
     var li = document.createElement('li');
     li.setAttribute("id", taskName);
-
+    li.setAttribute("style", `background-color:${cardColor}`);
+    
     // create a span element to hold the task text
     var taskTextElement = document.createElement('span'); 
     taskTextElement.setAttribute("class", "task-text");

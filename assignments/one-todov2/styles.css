@@ -232,3 +232,16 @@ footer a:visited {
 footer a:hover {
     color: cyan;
 }
+
+#bgcolor {
+    padding: 0;
+    width: 0;
+    height: 24px;
+    visibility: hidden;
+}
+
+.color-card {
+    position: absolute;
+    bottom: 9px;
+    right: 38px;
+}
