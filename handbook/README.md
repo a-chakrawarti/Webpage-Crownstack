@@ -532,6 +532,15 @@ The universal selector (*) has low specificity, while ID selectors are highly sp
 3. Class, Attribute and Pseudo-class (each) - 10
 4. Elements(h1, p etc), pseudo-elements(::before etc) - 1
 
+- [Attribute Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+- [W3C Candidate Recommendation - CSS Attributes](https://drafts.csswg.org/selectors-3/#attribute-selectors)
+
+## >| CSS media queries
+
+- [MDN: Media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+- [CSS-TRICKS: Complete Guide to media queries](https://css-tricks.com/a-complete-guide-to-css-media-queries/)
+- [Media queries for standard devices](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
+
 ## >| Box Shadow
 
 Reference : https://www.w3schools.com/css/css3_shadows_box.asp

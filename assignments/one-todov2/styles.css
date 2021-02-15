@@ -67,6 +67,7 @@ li:hover {
     position: absolute;
     top: 15px;
     left: 10px;
+    cursor: pointer;
 }
 
 .delete-btn {
@@ -80,6 +81,7 @@ li:hover {
     right: 10px;
     margin: 0 3px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .edit-btn {
@@ -92,6 +94,7 @@ li:hover {
     bottom: 10px;
     margin: 0 3px;
     right: 40px;
+    cursor: pointer;
 }
 
 .ml-20 p {
@@ -118,4 +121,55 @@ li:hover {
     width: 40px;
     height: 30px;
     cursor: pointer;
+}
+
+.not-supported {
+    display: none;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 736px) {
+    .flex-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+    li {
+        width: auto;
+        height: auto;
+        justify-content: space-evenly;
+        max-height: 35px;
+        overflow-y:scroll;
+    }
+
+    .not-supported {
+        display: none;
+    }
+
+    li:hover {
+        transform: scale(1.015, 1.01);
+    }
+
+}
+
+@media only screen and (max-width: 413px) {
+    .not-supported {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 0, 0.372);
+        color: red;
+        font-size: 15px;
+        font-weight: bold;
+        filter: blur(0px);
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    body>* {
+        filter:blur(10px);
+    }
 }

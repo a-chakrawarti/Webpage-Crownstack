@@ -81,6 +81,7 @@ body {
     min-width: 100%;
     height: inherit;
     object-fit: cover;
+    /* clip-path: inset(0%, 100%, 60%, 10%); */
 }
 
 .hero-text {
@@ -109,4 +110,10 @@ body {
 
 .hero-text:hover {
     transform: scale(1.1, 1.1);
+}
+
+@media only screen and (max-width: 650px) {
+    .nav ul {
+        display: none;
+    }
 }
