@@ -72,6 +72,7 @@ li:hover {
     width: 24px;
     height: 24px;
     background-size: contain;
+    background-repeat: no-repeat;
     background-image: url("./assets/check.png");
     position: absolute;
     top: 15px;
@@ -98,6 +99,7 @@ li:hover {
     width: 16px;
     height: 16px;
     background-size: contain;
+    background-repeat: no-repeat;
     background-image: url("./assets/edit.png");
     position: absolute;
     bottom: 10px;
@@ -207,4 +209,26 @@ li:hover {
     body>* {
         filter:blur(10px);
     }
+}
+
+footer {
+    position:fixed;
+    bottom: 10px;
+    left: 45%;
+    text-align: center;
+    margin: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color:rgb(221, 221, 221)
+}
+
+footer a:visited {
+    color:cyan;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cyan;
 }
